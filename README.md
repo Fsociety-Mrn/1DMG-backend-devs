@@ -27,6 +27,12 @@ look for the following 'extension=initl' and remove or uncomment this part just 
 
 [xampp setup](https://stackoverflow.com/questions/60250533/codeigniter-4-problem-installing-with-composer)
 
+inside the repo folder please import the [one_dmg.sql](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/one_dmg.sql) on 
+
+``` HTTP
+    localhost/phpmyadmin
+```
+
 and restart the apache server on xampp
 
 ### to run the project please follow the following
