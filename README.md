@@ -21,30 +21,86 @@ link to download
 
 first run the xampp server and click Config/ PHP(Php.ini)
 
-look for the follow and remove or uncomment this part just like the picture
+look for the following 'extension=initl' and remove or uncomment this part just like the picture
 
 ![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/setup%20intl.png)
 
+[xampp setup](https://stackoverflow.com/questions/60250533/codeigniter-4-problem-installing-with-composer)
 
+and restart the apache server on xampp
 
-Go to the project directory
+### to run the project please follow the following
 
+install dependencies 
 ```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
+  composer install --no-dev
 ```
 
 Start the server
 
 ```bash
-  npm run start
+  php spark serve
 ```
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+## API Reference
 
+#### Create
+
+``` API endpoints
+  // Accept JSON data
+  POST http://localhost:8080/posts/
+  
+```
+### Read
+``` API endpoints
+  GET http://localhost:8080/posts/
+  GET http://localhost:8080/posts/{1}
+      ex: http://localhost:8080/posts/1
+```
+### Update
+``` API endpoints
+  // Accept JSON data
+  PUT http://localhost:8080/posts/{4}
+      ex: http://localhost:8080/posts/4
+```
+### Delete
+``` API endpoints
+  DELETE http://localhost:8080/posts/{4}
+      ex: http://localhost:8080/posts/4
+```
+
+
+
+## Testing and Result
+
+post / create
+
+![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/create.png)
+
+read all and read specific
+![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/readall.png)
+![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/read%209.png)
+
+update result
+![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/update.png)
+![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/update%20proof.png)
+
+delete and proof
+![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/delete%209.png)
+![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/deleteed%209.png)
+
+
+
+
+## reference
+
+Any additional information goes here
+
+[REST api codeignite](https://codeigniter4.github.io/userguide/incoming/restful.html)
+
+[CRUD operation](https://medium.com/@choirulihwan/how-to-create-crud-operation-with-codeigniter-4-and-react-js-fb54d28c923c)
+
+[Query Build](https://codeigniter.com/user_guide/database/query_builder.html)
+
+[HTTP code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)
