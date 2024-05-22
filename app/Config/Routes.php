@@ -7,9 +7,11 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
+$routes->get('/api', 'APIController::index');
 
-$routes->get('/api', 'API::index');
-$routes->get('/api/posts/create', 'API::create_post');
-$routes->get('/api/posts/read', 'API::read_posts');
-$routes->get('/api/posts/update', 'API::update_posts');
-$routes->get('/api/posts/delete', 'API::delete_post');
+// POST
+$routes->post('/posts/create', 'APIController::create');
+
+// GET
+$routes->get('/posts/read/(:num)?', 'APIController::read/$1');
+$routes->get('/posts/read/', 'APIController::read/');
