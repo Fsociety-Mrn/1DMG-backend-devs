@@ -4,76 +4,92 @@
 Technical exam for backend developer
 
 
+## Table of Contents
+* [Link to download and install the necessary software](#link-to-download)
+* [Setup the Xampp server and Codeigniter folder](#setup-xampp-server)
+* [Start the server](#start-the-server)
 
+## Link to download
 
-### Note: please install composer and xampp if already install you can skip this
+* download [Composer](https://getcomposer.org/)
+  + youtube tutorial [Link](https://youtu.be/0VczFSu78uI?si=A251YxHVafHVwFZE) to install & setup Composer
 
-link to download
+* download and install [xampp](https://www.apachefriends.org/download.html)
 
-[Composer](https://getcomposer.org/)
+## Setup Xampp server
 
-[xampp](https://www.apachefriends.org/download.html)
+1. first run the xampp server and click Config/PHP(Php.ini)
 
-[youtube tutorial link](https://youtu.be/0VczFSu78uI?si=A251YxHVafHVwFZE )
-
-
-## setup 
-
-first run the xampp server and click Config/ PHP(Php.ini)
-
-look for the following 'extension=initl' and remove or uncomment this part just like the picture
+    look for the following 'extension=initl' and remove or uncomment this part
 
 ![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/setup%20intl.png)
 
-[xampp setup](https://stackoverflow.com/questions/60250533/codeigniter-4-problem-installing-with-composer)
+    A detailed tutorial how to remove or uncomment this part [xampp setup](https://stackoverflow.com/questions/60250533/codeigniter-4-problem-installing-with-composer)
 
-inside the repo folder please import the [one_dmg.sql](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/one_dmg.sql) on 
+2. open in the browser to view/setup the databases
 
-``` HTTP
-    localhost/phpmyadmin
-```
+    ``` browser
+        localhost/phpmyadmin
+    ```
 
-and restart the apache server on xampp
+2. inside the resources folder please import the `one_dmg.sql` on the phpmyadmin
 
-### to run the project please follow the following
+3. restart the apache server on xampp
 
-install dependencies 
+## Start the server
+
+* to install dependencies 
 ```bash
-  composer install --no-dev
+    composer install --no-dev
 ```
 
-Start the server
+* Start the server
 
 ```bash
   php spark serve
 ```
 
 
-## API Reference
+## API endpoints
 
-#### Create
-
+1. Create
++ using POST method
 ``` API endpoints
-  // Accept JSON data
-  POST http://localhost:8080/posts/
+    // please note this endpoints accept JSON format
+    // actual endpoints
+    http://localhost:8080/posts/
   
 ```
-### Read
+2. Read
+
++ to read All data using GET method
 ``` API endpoints
-  GET http://localhost:8080/posts/
-  GET http://localhost:8080/posts/{1}
-      ex: http://localhost:8080/posts/1
+    // actual endpoints
+    http://localhost:8080/posts/
 ```
-### Update
+
++ to read specific data using GET method, simply put id at the end of the endpoints
 ``` API endpoints
-  // Accept JSON data
-  PUT http://localhost:8080/posts/{4}
-      ex: http://localhost:8080/posts/4
+    // actual endpoints
+    http://localhost:8080/posts/{id}
+
+    // Example how to delete specific data using ID
+    http://localhost:8080/posts/1
 ```
-### Delete
+3. Update
++ to update specific data using PUT method, simply put id at the end of the endpoints and update the data in JSON format
+
 ``` API endpoints
-  DELETE http://localhost:8080/posts/{4}
-      ex: http://localhost:8080/posts/4
+    // please note this endpoints accept JSON format
+    // actual endpoints
+    http://localhost:8080/posts/{id}
+```
+4. Delete
++ to delete specific data using DELETE method, simply put id at the end of the points
+
+``` API endpoints
+    // actual endpoints
+    http://localhost:8080/posts/{id}
 ```
 
 
