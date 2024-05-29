@@ -1,13 +1,19 @@
 
 # One Digital Marketing Group - Technical Exam 
 
-Technical exam for backend developer
+### Technical exam for backend developer
+
+this projects create a basic RESTful api endpoints using Codeigniter 4 and Xampp server for Blog posts
 
 
 ## Table of Contents
 * [Link to download and install the necessary software](#link-to-download)
 * [Setup the Xampp server and Codeigniter folder](#setup-xampp-server)
 * [Start the server](#start-the-server)
+* [Testing and Result](#testing-and-result)
+* [reference](#reference)
+
+
 
 ## Link to download
 
@@ -24,7 +30,7 @@ Technical exam for backend developer
 
 ![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/setup%20intl.png)
 
-    A detailed tutorial how to remove or uncomment this part [xampp setup](https://stackoverflow.com/questions/60250533/codeigniter-4-problem-installing-with-composer)
+NOTE: A detailed tutorial how to remove or uncomment this part [xampp setup](https://stackoverflow.com/questions/60250533/codeigniter-4-problem-installing-with-composer)
 
 2. open in the browser to view/setup the databases
 
@@ -96,33 +102,31 @@ Technical exam for backend developer
 
 ## Testing and Result
 
-post / create
+1. post / create
 
-![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/create.png)
+    ![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/create.png)
 
-read all and read specific
+    + read all and read specific
 ![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/readall.png)
 ![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/read%209.png)
 
-update result
-![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/update.png)
-![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/update%20proof.png)
+2. update result
+    ![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/update.png)
+    ![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/update%20proof.png)
 
-delete and proof
-![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/delete%209.png)
-![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/deleteed%209.png)
+3. delete and proof
+    ![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/delete%209.png)
+    ![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/deleteed%209.png)
 
 
 
 
 ## reference
 
-Any additional information goes here
+1. documentation of [REST api codeigniter](https://codeigniter4.github.io/userguide/incoming/restful.html)
 
-[REST api codeignite](https://codeigniter4.github.io/userguide/incoming/restful.html)
+4. Tutorial of [CRUD operation](https://medium.com/@choirulihwan/how-to-create-crud-operation-with-codeigniter-4-and-react-js-fb54d28c923c)
 
-[CRUD operation](https://medium.com/@choirulihwan/how-to-create-crud-operation-with-codeigniter-4-and-react-js-fb54d28c923c)
+2. Documentation for [Query Build](https://codeigniter.com/user_guide/database/query_builder.html)
 
-[Query Build](https://codeigniter.com/user_guide/database/query_builder.html)
-
-[HTTP code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)
+3. Detailed [HTTP code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)
