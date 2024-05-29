@@ -17,7 +17,7 @@ this projects create a basic RESTful api endpoints using Codeigniter 4 and Xampp
 
 ## Link to download
 
-* download [Composer](https://getcomposer.org/)
+* download and install [Composer](https://getcomposer.org/)
   + youtube tutorial [Link](https://youtu.be/0VczFSu78uI?si=A251YxHVafHVwFZE) to install & setup Composer
 
 * download and install [xampp](https://www.apachefriends.org/download.html)
@@ -38,7 +38,7 @@ NOTE: A detailed tutorial how to remove or uncomment this part [xampp setup](htt
         localhost/phpmyadmin
     ```
 
-2. inside the resources folder please import the `one_dmg.sql` on the phpmyadmin
+2. create database name of `one_dmg` on the phpmyadmin
 
 3. restart the apache server on xampp
 
@@ -49,14 +49,18 @@ NOTE: A detailed tutorial how to remove or uncomment this part [xampp setup](htt
     composer install --no-dev
 ```
 
+* to create table 
+```bash
+    php spark migrate --all
+```
+
 * Start the server
 
 ```bash
-  php spark serve
+    php spark serve
 ```
 
 
-## API endpoints
 
 1. Create
 + using POST method
