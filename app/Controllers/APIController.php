@@ -16,7 +16,7 @@ class APIController extends BaseController
     {
         try {
 
-            // Load the database connection
+            // Load the database connection asd
             $db = db_connect();
 
 
