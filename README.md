@@ -10,6 +10,7 @@ this projects create a basic RESTful api endpoints using Codeigniter 4 and Xampp
 * [Link to download and install the necessary software](#link-to-download)
 * [Setup the Xampp server and Codeigniter folder](#setup-xampp-server)
 * [Start the server](#start-the-server)
+* [API keys and Endpoints](#api-keys-and-endpoints)
 * [Testing and Result](#testing-and-result)
 * [reference](#reference)
 
@@ -60,7 +61,21 @@ NOTE: A detailed tutorial how to remove or uncomment this part [xampp setup](htt
     php spark serve
 ```
 
+## API keys and Endpoints
 
+### API keys setup
+this endpoints protected via API keys
+
+API Keys
+```API keys
+    a0a354bc63af42e1910ba8ff7421ae939229744cf0fcef365f0ad421f660f069
+```
+
+this image show how to access endpoints using API keys
+
+![Logo](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/deleteed%209.png)
+
+### API Endpoints
 
 1. Create
 + using POST method
