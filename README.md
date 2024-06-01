@@ -73,7 +73,7 @@ API Keys
 
 this image show how to access endpoints using API keys
 
-![Logo]([https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/deleteed%209.png](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/API%20keys.png])
+![Logo]([https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/deleteed%209.png](https://github.com/Fsociety-Mrn/one-dmg-exam/blob/main/resources/API%20keys.png)])
 
 ### API Endpoints
 
