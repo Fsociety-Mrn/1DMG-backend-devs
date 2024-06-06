@@ -78,8 +78,6 @@ class APIController extends BaseController
             // Get JSON data from the request body
             $requestData = $this->request->getJSON();
 
-            $current_timestamp = time();
-
             // Update the data into the database
             $db->table('data_model')
                 ->set('updated_at',date("Y-m-d H:i:s", time()))
