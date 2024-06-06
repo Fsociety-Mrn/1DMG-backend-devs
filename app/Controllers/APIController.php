@@ -19,7 +19,6 @@ class APIController extends BaseController
             // Load the database connection asd
             $db = db_connect();
 
-
             // Get JSON data from the request body
             $requestData = $this->request->getJSON();
             
